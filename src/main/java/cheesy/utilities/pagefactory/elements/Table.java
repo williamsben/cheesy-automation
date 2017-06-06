@@ -7,9 +7,6 @@ import cheesy.utilities.pagefactory.elementfactory.ImplementedBy;
 
 import java.util.List;
 
-/**
- * Created by billiams on 6/5/17.
- */
 @ImplementedBy(TableImplementation.class)
 public interface Table extends Element {
     List<Cheese> getCheeses();

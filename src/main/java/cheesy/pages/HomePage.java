@@ -3,34 +3,29 @@ package cheesy.pages;
 import cheesy.model.Taste;
 import cheesy.utilities.pagefactory.BasePage;
 import cheesy.utilities.pagefactory.PageStore;
-import cheesy.utilities.pagefactory.elements.Select;
-import cheesy.utilities.pagefactory.elements.Table;
-import org.openqa.selenium.WebElement;
+import cheesy.utilities.pagefactory.elements.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.Collections;
 
-/**
- * Created by billiams on 6/5/17.
- */
 public class HomePage extends BasePage {
 
-    @FindBy(id="add-button")
-    private WebElement addButton;
+    @FindBy(css="div.header-wrapper p")
+    private Paragraph userInfoParagraph;
+
+    @FindBy(css="form#logout-form input")
+    private Button logoutButton;
 
     @FindBy(id="name")
-    private WebElement nameField;
+    private TextInput nameField;
 
     @FindBy(id="taste")
     private Select tasteSelect;
 
-    @FindBy(css="form#logout-form input")
-    private WebElement logoutButton;
-
-    @FindBy(css="div.header-wrapper p")
-    private WebElement userText;
+    @FindBy(id="add-button")
+    private Button addButton;
 
     @FindBy(id="cheese-table")
     private Table cheeseTable;
@@ -57,6 +52,6 @@ public class HomePage extends BasePage {
     }
 
     public String getUserInformation(){
-        return userText.getText();
+        return userInfoParagraph.getText();
     }
 }

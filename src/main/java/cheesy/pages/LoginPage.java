@@ -2,6 +2,8 @@ package cheesy.pages;
 
 import cheesy.utilities.pagefactory.BasePage;
 import cheesy.utilities.pagefactory.PageStore;
+import cheesy.utilities.pagefactory.elements.Button;
+import cheesy.utilities.pagefactory.elements.TextInput;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -9,19 +11,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.Collections;
 
-/**
- * Created by billiams on 6/5/17.
- */
 public class LoginPage extends BasePage {
 
     @FindBy(name="username")
-    private WebElement usernameField;
+    private TextInput usernameField;
 
     @FindBy(name="password")
-    private WebElement passwordField;
+    private TextInput passwordField;
 
     @FindBy(name="submit")
-    private WebElement submitButton;
+    private Button submitButton;
 
     @Override
     public ExpectedCondition<?> ready(){

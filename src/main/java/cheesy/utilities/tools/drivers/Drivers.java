@@ -9,9 +9,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-/**
- * Created by billiams on 6/5/17.
- */
 public class Drivers {
 
     public static WebDriver getDriver(Browser browser){ return getDriver(browser, null);}

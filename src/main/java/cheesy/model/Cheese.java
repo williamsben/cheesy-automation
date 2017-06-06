@@ -2,9 +2,6 @@ package cheesy.model;
 
 import org.openqa.selenium.WebElement;
 
-/**
- * Created by billiams on 6/5/17.
- */
 public class Cheese {
     public String name;
     public Taste taste;

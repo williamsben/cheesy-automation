@@ -12,9 +12,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by billiams on 6/5/17.
- */
 public class TableImplementation extends ElementImplementation implements Table {
 
     private By locator;

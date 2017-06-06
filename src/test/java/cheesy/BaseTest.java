@@ -8,9 +8,6 @@ import cheesy.utilities.tools.drivers.Drivers;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-/**
- * Created by billiams on 6/5/17.
- */
 public class BaseTest {
 
     protected WebDriverResource wdr = WebDriverResource.getInstance();

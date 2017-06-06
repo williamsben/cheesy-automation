@@ -3,9 +3,6 @@ package cheesy.utilities.tools;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- * Created by billiams on 6/5/17.
- */
 public class WebDriverResource {
     private static WebDriverResource instance = null;
     public WebDriver driver;
