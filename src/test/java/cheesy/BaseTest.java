@@ -24,7 +24,7 @@ public class BaseTest {
     public void setup() throws Exception {
 
         Browser browser = Browser.CHROME;
-        String url = "http://localhost:7070/demo/";
+        String url = "http://ec2-52-40-204-156.us-west-2.compute.amazonaws.com/demo/";
 
         DesiredCapabilities cap = DesiredCapabilities.chrome();
         cap.setBrowserName("chrome");
