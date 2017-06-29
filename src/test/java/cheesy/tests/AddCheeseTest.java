@@ -6,9 +6,6 @@ import cheesy.pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-/**
- * Created by billiams on 6/5/17.
- */
 public class AddCheeseTest extends BaseTest {
 
     @Test
