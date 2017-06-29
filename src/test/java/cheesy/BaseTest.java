@@ -29,7 +29,7 @@ public class BaseTest {
         DesiredCapabilities cap = DesiredCapabilities.chrome();
         cap.setBrowserName("chrome");
         cap.setPlatform(Platform.MAC);
-        WebDriver driver = new RemoteWebDriver(new URL("http://192.168.99.1:4444/wd/hub"), cap);
+        WebDriver driver = new RemoteWebDriver(new URL("http://172.20.0.134:4444/wd/hub"), cap);
 
 
         wdr.setDriver(driver);
